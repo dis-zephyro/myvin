@@ -30,7 +30,7 @@ html {
 }
 
 body {
-	margin-bottom: 100px;
+	margin-bottom: 120px;
 }
 
 .container {
@@ -45,7 +45,7 @@ body {
 
 .header {
 	height: 160px;
-	margin-bottom: 60px;
+	margin-bottom: 53px;
 
 	.header_logo {
 		top: 42px;
@@ -65,7 +65,7 @@ body {
 		font-weight: 600;
 		list-style: none;
 		line-height: 20px;
-		padding: 80px 0 0 0;
+		padding: 76px 0 0 0;
 		text-transform: uppercase;
 		font-family: 'Open Sans', sans-serif;
 
@@ -124,20 +124,22 @@ body {
 }
 
 .scale {
+	margin-bottom: 55px;
 
 	.scale_line {
-		width: 750px;
+		width: 723px;
 		height: 70px;
-		margin: 0 auto 60px auto;
+		margin: 0 auto;
 		padding: 12px 0;
 		list-style: none;
 
 		li {
 			height: 6px;
 			float: left;
-			width: 249px;
+			width: 240px;
 			position: relative;
 			background: #cdd1d5;
+			text-transform: uppercase;
 
 			&:before {
 				z-index: 100;
@@ -199,6 +201,7 @@ body {
 	position: relative;
 	.border-radius(15px);
 	padding: 20px 5px;
+	margin-bottom: 65px;
 	.box-shadow(0px 2px 24px rgba(148, 169, 184, 1));
 
 	&.showcase_left {
@@ -258,7 +261,191 @@ body {
 		font-weight: 700;
 		line-height: 30px;
 		margin-left: 140px;
+		margin-bottom: 30px;
 		text-transform: uppercase;
+	}
+
+	ul {
+		margin: 0;
+		height: 233px;
+		list-style: none;
+		padding: 0 0 0 80px;
+	}
+
+	li {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 42px;
+		padding-left: 40px;
+		text-transform: uppercase;
+
+		&.item1 {
+			background: url("../img/icon_nobraukumi.png") left center no-repeat;
+		}
+
+		&.item2 {
+			background: url("../img/icon_registracijas.png") left center no-repeat;
+		}
+
+		&.item3 {
+			background: url("../img/icon_apskates.png") left center no-repeat;
+		}
+
+		&.item4 {
+			background: url("../img/icon_negadijumi.png") left center no-repeat;
+		}
+
+		&.item5 {
+			background: url("../img/icon_zaudejumi.png") left center no-repeat;
+		}
+	}
+
+	.showcase_box {
+		height: 34px;
+		color: #565456;
+		font-size: 16px;
+		line-height: 32px;
+		border-radius: 3px;
+		position: relative;
+		padding-left: 14px;
+		text-align: center;
+		margin-bottom: 26px;
+		display: inline-block;
+		border: 1px solid #224eb7;
+		background: #fff url("../img/icon_lv.png") left center no-repeat;
+
+		&:before {
+			top: 4px;
+			right: -30px;
+			width: 24px;
+			height: 24px;
+			content: " ";
+			position: absolute;
+			background: url("../img/icon_alert.png") 0 0 no-repeat;
+		}
+
+		&.box1 {
+			width: 132px;
+		}
+
+		&.box2 {
+			width: 118px;
+			margin-left: 15px;
+		}
+
+		&.box3 {
+			width: 124px;
+			margin-left: 44px;
+		}
+	}
+}
+
+.slider {
+	height: 150px;
+	position: relative;
+
+	ul {
+		padding: 0;
+		width: 720px;
+		height: 150px;
+		margin: 0 auto;
+		list-style: none;
+	}
+
+	li {
+		width: 100%;
+		height: 150px;
+		display: table;
+		color: #282528;
+		font-size: 23px;
+		font-weight: 300;
+		line-height: 27px;
+		text-align: center;
+
+		span {
+			width: 100%;
+			height: 150px;
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+
+	.slider_nav {
+		top: 50%;
+		width: 42px;
+		height: 42px;
+		cursor: pointer;
+		margin-top: -21px;
+		position: absolute;
+		background: url("../img/icon_nav.png") 0 0 no-repeat;
+
+		&.prev {
+			left: 50px;
+			background-position: 0 0;
+
+			&:hover {
+				background-position: 0 -42px;
+			}
+		}
+
+		&.next {
+			right: 50px;
+			background-position: -42px 0;
+
+			&:hover {
+				background-position: -42px -42px;
+			}
+		}
+	}
+}
+
+
+.btn {
+	color: #fff;
+	height: 42px;
+	border: none;
+	outline: none;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 10px 40px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-top: 2px solid #1682d2;
+	.border-radius(21px);
+	.box-shadow(0px 1px 4px 0px rgba(0, 0, 0, 1));
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#196cb9+0,1752b1+100 */
+	background: #196cb9; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE5NmNiOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNzUyYjEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #196cb9 0%, #1752b1 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#196cb9), color-stop(100%,#1752b1)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #196cb9 0%,#1752b1 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #196cb9 0%,#1752b1 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #196cb9 0%,#1752b1 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #196cb9 0%,#1752b1 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#196cb9', endColorstr='#1752b1',GradientType=0 ); /* IE6-8 */
+
+
+	&:before {
+		top: 4px;
+		right: 5px;
+		width: 36px;
+		height: 30px;
+		content: " ";
+		position: absolute;
+		background: url("../img/icon_arrow.png") left center no-repeat;
+	}
+
+	&:hover {
+		background: #1c65b0;
+	}
+
+	&:active {
+		top: 1px;
 	}
 }
 
