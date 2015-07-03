@@ -1,0 +1,327 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Myvin - payment</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=1024">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="js/vendor/slick/slick.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--link rel="stylesheet/less" href="less/main.less">
+        <script src="js/vendor/less.min.js"></script-->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!--[if gte IE 9]>
+            <link rel="stylesheet" href="css/ie.css">
+        <![endif]-->
+
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="\" class="header_logo ir">Myvin</a>
+                <ul class="header_nav clearfix">
+                    <li><a href="#">SĀKUMS</a></li>
+                    <li><a href="#">PAR MUMS</a></li>
+                    <li><a href="#">KONTAKTI</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="main">
+            <div class="container">
+                <h1 class="text_center">Neriskē! <strong>Pārbaudi</strong> auto vēsturi!</h1>
+                <div class="scale">
+                    <ul class="scale_line clearfix">
+                        <li class="step_current"><span class="scale_legend">Izvēlies produktu</span></li>
+                        <li class="step_current"><span class="scale_legend">Apmaksas veids</span></li>
+                        <li class="step_current"><span class="scale_legend">Apmaksa</span></li>
+                        <li class="step_current"><span class="scale_legend">Vēstures atskaite</span></li>
+                    </ul>
+                </div>
+                <div class="report_post">
+                    <h2 class="report_post_title">Vēlies <strong>atskaiti</strong> saņemt e-pastā?</h2>
+                    <form class="report_post_form" name="report_post_form">
+                        <div class="form_group text_center">
+                            <input type="text" class="form_control" placeholder="Ievadi savu e-pasta adresi">
+                            <button class="btn btn_sm" type="submit">NOsūtīt</button>
+                        </div>
+                    </form>
+                </div>
+                <nav class="report_nav">
+                    <ul>
+                        <li><a href="#report_item_1">Kopsavilkums</a></li>
+                        <li><a href="#report_item_3">Nobraukumi</a></li>
+                        <li><a href="#report_item_3">Avārijas</a></li>
+                        <li><a href="#report_item_4">Reģistrācijas</a></li>
+                        <li><a href="#report_item_5">Tehniskās apskates</a></li>
+                    </ul>
+                </nav>
+                <div id="report_item_1">
+                    <div class="gray_block">
+                        <table class="table">
+                            <tr>
+                                <td>Šasijas numurs (VIN)</td>
+                                <td>1HGBH41JXMN109186</td>
+                            </tr>
+                            <tr>
+                                <td>Marka</td>
+                                <td>Volkswagen</td>
+                            </tr>
+                            <tr>
+                                <td>Modelis</td>
+                                <td>Passat</td>
+                            </tr>
+                            <tr>
+                                <td>Izlaiduma gads</td>
+                                <td>2001</td>
+                            </tr>
+                            <tr>
+                                <td>Krāsa</td>
+                                <td>Zila</td>
+                            </tr>
+                            <tr>
+                                <td>Iepriekšējās reģistrācijas valsts</td>
+                                <td>Lietuva</td>
+                            </tr>
+                        </table>
+
+                        <div class="block_warning">
+                            <span class="block_warning_inner">
+                                Auto iepriekš ir bijis iesaistīts <strong>3 avārijās</strong>
+                                <br/>Auto ir reģistrēta <strong>pilnīga bojāeja!</strong> i-atsauce uz OCTA likumu
+                                <br/><strong>Auto nobraukumi nesakrīt!</strong> Auto ir vairākas nobraukumu nesakritības!
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- NOBRAUKUMI -->
+                <article class="report_item"  id="report_item_2">
+                    <h4>NOBRAUKUMI</h4>
+                    <div class="gray_block">
+                        <div class="clearfix">
+                            <div class="col_left">
+                                <table class="table table_strip two_col">
+                                    <tr>
+                                        <th>DATUMS</th>
+                                        <th>KILOMETRI</th>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2002.</td>
+                                        <td>10000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2003.</td>
+                                        <td>28000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2004.</td>
+                                        <td>52000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2005.</td>
+                                        <td>76000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2006.</td>
+                                        <td>125000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2007.</td>
+                                        <td>79000</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col_right pt40">
+                                <img class="img-responsive" src="img/graphics1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="block_warning">
+                            <span class="block_warning_inner">
+                                Pievērs uzmanību <strong>2007., 2009, 2011. gada nobraukumam
+                                <br/>2008. gadā</strong> ir bijis salīdzinoši mazs nobraukums
+                                <br/>Vidējais līdzīgu VW PASSAT nobraukums ir <strong>370 000 km</strong>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- AVĀRIJAS -->
+                <article class="report_item"  id="report_item_3">
+                    <h4>AVĀRIJAS</h4>
+                    <div class="gray_block">
+                        <table class="table table_strip four_col">
+                            <tr>
+                                <th>DATUMS</th>
+                                <th>ATBILDĪBA</th>
+                                <th>ATLĪDZĪBAS SUMMA EUR</th>
+                                <th>AUTO BOJĀEJA</th>
+                            </tr>
+                            <tr>
+                                <td>03.2009</td>
+                                <td>Vainīgais</td>
+                                <td>2500</td>
+                                <td>Nē</td>
+                            </tr>
+                            <tr>
+                                <td>11.2013</td>
+                                <td>Cietušais</td>
+                                <td>-</td>
+                                <td>Nē</td>
+                            </tr>
+                            <tr>
+                                <td>11.2014</td>
+                                <td>Cietušais</td>
+                                <td>2100</td>
+                                <td>Nē</td>
+                            </tr>
+                        </table>
+                        <div class="block_warning">
+                            <span class="block_warning_inner">
+                                <strong>2500 EUR remonts</strong> ir diezgan liels, tādēļ pievērs uzmanību šim faktam
+                                <br/>Auto ir bijis vairākkārt vainīgais, kas liecina, <strong>par braukšanas kultūru</strong>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- REĢISTRĀCIJAS -->
+                <article class="report_item"  id="report_item_4">
+                    <h4>REĢISTRĀCIJAS</h4>
+                    <div class="gray_block">
+                        <div class="clearfix">
+                            <div class="col_left">
+                                <table class="table fs16">
+                                    <tr>
+                                        <td>Esošais statuss:</td>
+                                        <td>Uzskaitē</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Iepriekš reģistrēts:</td>
+                                        <td>Lietuva</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Iegādāts:</td>
+                                        <td>Vācija</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Īpašnieki:</td>
+                                        <td>5</td>
+                                    </tr>
+                                </table>
+                                <table class="table table_strip">
+                                    <tr>
+                                        <th>DATUMS</th>
+                                        <th>STATUSA MAIŅAS</th>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2002.</td>
+                                        <td>Pirmā reģistrācija</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2003.</td>
+                                        <td>Īpašnieka maiņa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2004.</td>
+                                        <td>Īpašnieka maiņa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2005.</td>
+                                        <td>Noņemts no uzskaites</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.2006.</td>
+                                        <td>Īpašnieka maiņa</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col_right pt110">
+                                <img class="img-responsive" src="img/graphics2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="block_warning">
+                            <span class="block_warning_inner">
+                                Vidēji 2001.gada Volkswagen Passat <strong>ir 2 īpašnieki</strong>
+                                <br/>Vidējais laiks pie viena īpašnieka <strong>ir 2 gadi 6 mēneši</strong>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- TEHNISKĀS APSKATES -->
+                <article class="report_item"  id="report_item_5">
+                    <h4>TEHNISKĀS APSKATES</h4>
+                    <div class="gray_block">
+                        <table class="table table_strip four_col">
+                            <tr>
+                                <th>DATUMS</th>
+                                <th>NOVĒRTĒJUMS</th>
+                                <th>KILOMETRI</th>
+                                <th>KAVĒTAS DIENAS</th>
+                            </tr>
+                            <tr>
+                                <td>03.2009</td>
+                                <td>1</td>
+                                <td>79000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>11.2010</td>
+                                <td>2</td>
+                                <td>92000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>11.2011</td>
+                                <td>1</td>
+                                <td>121000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>11.2012</td>
+                                <td>2</td>
+                                <td>139333</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>11.2013</td>
+                                <td>2</td>
+                                <td>160333</td>
+                                <td>486</td>
+                            </tr>
+                        </table>
+                        <div class="block_warning">
+                            <span class="block_warning_inner">
+                                Pievērs uzmanību 2014 gada apskates kavējumam
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class=""></section>
+        <footer class="footer">
+            <div class="container">
+                <ul class="footer_nav">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+                <div class="copyright">© 2015 myvin. All Rights Reserved.</div>
+            </div>
+        </footer>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/slick/slick.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -91,19 +91,23 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 body {
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 .container {
   width: 990px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .header {
   height: 160px;
   margin-bottom: 53px;
+}
+.header .container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header .header_logo {
   top: 42px;
@@ -143,6 +147,10 @@ body {
   bottom: 0;
   height: 80px;
   position: absolute;
+}
+.footer .container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .footer .footer_nav {
   margin: 0;
@@ -245,7 +253,7 @@ body {
 }
 .showcase.showcase_left {
   float: left;
-  margin-left: 30px;
+  margin-left: 10px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbeffb+0,f1f9fc+100 */
   background: #dbeffb;
   /* Old browsers */
@@ -268,7 +276,7 @@ body {
 }
 .showcase.showcase_right {
   float: right;
-  margin-right: 30px;
+  margin-right: 10px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a3c5ea+0,e5f3fb+60,eaf7fc+100 */
   background: #a3c5ea;
   /* Old browsers */
@@ -411,18 +419,236 @@ body {
   background: url("../img/icon_nav.png") 0 0 no-repeat;
 }
 .slider .slider_nav.prev {
-  left: 50px;
+  left: 30px;
   background-position: 0 0;
 }
 .slider .slider_nav.prev:hover {
   background-position: 0 -42px;
 }
 .slider .slider_nav.next {
-  right: 50px;
+  right: 30px;
   background-position: -42px 0;
 }
 .slider .slider_nav.next:hover {
   background-position: -42px -42px;
+}
+.report_post {
+  margin-bottom: 30px;
+}
+.report_post h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.report_post .form_control {
+  width: 220px;
+  color: #a0adba;
+  font-weight: 600;
+  padding: 5px 20px;
+  margin-right: 20px;
+}
+.report_post .form_control ::-webkit-input-placeholder {
+  color: #a0adba;
+}
+.report_post .form_control :-moz-placeholder {
+  color: #a0adba;
+}
+.report_nav {
+  height: 51px;
+  background: #cdd1d5;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.report_nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 51px;
+  display: table;
+  list-style: none;
+}
+.report_nav li {
+  height: 51px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+.report_nav a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.report_nav a:hover {
+  color: #0e56a7;
+  margin-bottom: 20px;
+}
+.payment_block {
+  width: 920px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  padding: 90px 0 80px 0;
+}
+.payment_block .btn {
+  margin-top: 70px;
+}
+.gray_block {
+  padding: 20px 48px;
+  background: #f5f5f5;
+}
+.block_warning {
+  width: 100%;
+  display: table;
+  min-height: 80px;
+  padding: 0px 0 10px 75px;
+  background: url("../img/icon_warning.png") left center no-repeat;
+}
+.block_warning .block_warning_inner {
+  min-height: 80px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.block_warning strong {
+  font-weight: 600;
+}
+.report_item {
+  margin-top: 70px;
+}
+.report_item h4 {
+  color: #0155b2;
+  line-height: 20px;
+  margin-bottom: 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #0155b2;
+}
+.report_item .col_left {
+  float: left;
+  width: 410px;
+}
+.report_item .col_right {
+  float: right;
+  width: 380px;
+}
+.report_item .col_right.pt40 {
+  padding-top: 40px;
+}
+.report_item .col_right.pt110 {
+  padding-top: 110px;
+}
+/* Tables */
+.table {
+  border: none;
+  color: #2f4455;
+  font-weight: 600;
+  margin: 0 0 40px 0;
+}
+.table th {
+  font-weight: 700;
+  text-align: left;
+  padding: 8px 25px;
+  text-transform: uppercase;
+}
+.table td {
+  border: none;
+  text-align: left;
+  padding: 8px 25px;
+}
+.table.table_strip {
+  width: 100%;
+}
+.table.table_strip td {
+  padding: 13px 25px;
+}
+.table.table_strip td:first-child {
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.table.table_strip td:last-child {
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.table.table_strip tr:nth-child(odd) {
+  background: transparent;
+}
+.table.table_strip tr:nth-child(even) th,
+.table.table_strip tr:nth-child(even) td {
+  background: #fff;
+  overflow: hidden;
+}
+.table.fs16 {
+  font-size: 16px;
+}
+.table.fs16 td {
+  padding: 5px 25px;
+}
+.table.two_col td:last-child {
+  width: 40%;
+}
+.table.four_col th,
+.table.four_col td {
+  text-align: center;
+}
+.table.four_col th:first-child,
+.table.four_col td:first-child {
+  text-align: left;
+}
+/* Form & Button */
+.form_group {
+  position: relative;
+  margin-bottom: 22px;
+}
+.form_group .form_left {
+  width: 50%;
+  float: left;
+  padding-right: 55px;
+  text-align: right;
+}
+.form_group .form_right {
+  width: 50%;
+  float: right;
+  padding-left: 20px;
+}
+label {
+  color: #2f4455;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  display: inline-block;
+}
+.form_control {
+  margin: 0;
+  width: 200px;
+  outline: none;
+  color: #2f4455;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2px 20px;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #d8d8d8;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.form_control.valid_date {
+  width: 60px;
+  margin-right: 12px;
+}
+.form_control.cvv {
+  width: 130px;
+}
+.form_control:focus {
+  border-color: #2f4455;
+}
+.form_control ::-webkit-input-placeholder {
+  color: #2f4455;
+}
+.form_control :-moz-placeholder {
+  color: #2f4455;
 }
 .btn {
   color: #fff;
@@ -478,6 +704,15 @@ body {
 }
 .btn:active {
   top: 1px;
+}
+.btn.btn_sm {
+  height: 32px;
+  font-size: 14px;
+  padding: 5px 25px;
+}
+.btn.btn_sm:before {
+  top: 0;
+  right: 0;
 }
 /* Typography
    ========================= */

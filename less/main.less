@@ -30,7 +30,7 @@ html {
 }
 
 body {
-	margin-bottom: 120px;
+	margin-bottom: 140px;
 }
 
 .container {
@@ -38,14 +38,19 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 35px;
+	padding-right: 35px;
 }
 
 
 .header {
 	height: 160px;
 	margin-bottom: 53px;
+
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	.header_logo {
 		top: 42px;
@@ -91,6 +96,11 @@ body {
 	bottom: 0;
 	height: 80px;
 	position: absolute;
+
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 
 	.footer_nav {
 		margin: 0;
@@ -206,7 +216,7 @@ body {
 
 	&.showcase_left {
 		float: left;
-		margin-left: 30px;
+		margin-left: 10px;
 
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dbeffb+0,f1f9fc+100 */
 		background: #dbeffb; /* Old browsers */
@@ -223,7 +233,7 @@ body {
 
 	&.showcase_right {
 		float: right;
-		margin-right: 30px;
+		margin-right: 10px;
 
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a3c5ea+0,e5f3fb+60,eaf7fc+100 */
 		background: #a3c5ea; /* Old browsers */
@@ -380,7 +390,7 @@ body {
 		background: url("../img/icon_nav.png") 0 0 no-repeat;
 
 		&.prev {
-			left: 50px;
+			left: 30px;
 			background-position: 0 0;
 
 			&:hover {
@@ -389,7 +399,7 @@ body {
 		}
 
 		&.next {
-			right: 50px;
+			right: 30px;
 			background-position: -42px 0;
 
 			&:hover {
@@ -399,6 +409,269 @@ body {
 	}
 }
 
+.report_post {
+	margin-bottom: 30px;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.form_control {
+		width: 220px;
+		color: #a0adba;
+		font-weight: 600;
+		padding: 5px 20px;
+		margin-right: 20px;
+
+		::-webkit-input-placeholder {
+			color: #a0adba;
+		}
+
+		:-moz-placeholder {
+			color: #a0adba;
+		}
+	}
+}
+
+.report_nav {
+	height: 51px;
+	background: #cdd1d5;
+	.border-radius(8px);
+	margin-bottom: 20px;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 51px;
+		display: table;
+		list-style: none;
+	}
+
+	li {
+		height: 51px;
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	a {
+		color: #fff;
+		font-weight: 700;
+		text-decoration: none;
+		text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.1);
+
+		&:hover {
+			color: #0e56a7;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.payment_block {
+	width: 920px;
+	margin: 0 auto;
+	background: #f5f5f5;
+	padding: 90px 0 80px 0;
+
+	.btn {
+		margin-top: 70px;
+	}
+}
+
+.gray_block {
+	padding: 20px 48px;
+	background: #f5f5f5;
+}
+
+.block_warning {
+	width: 100%;
+	display: table;
+	min-height: 80px;
+	padding: 0px 0 10px 75px;
+	background: url("../img/icon_warning.png") left center no-repeat;
+
+	.block_warning_inner {
+		min-height: 80px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	strong {
+		font-weight: 600;
+	}
+}
+
+.report_item {
+	margin-top: 70px;
+
+	h4 {
+		color: #0155b2;
+		line-height: 20px;
+		margin-bottom: 22px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #0155b2;
+	}
+
+	.col_left {
+		float: left;
+		width: 410px;
+	}
+
+	.col_right {
+		float: right;
+		width: 380px;
+
+		&.pt40 {
+			padding-top: 40px;
+		}
+
+		&.pt110 {
+			padding-top: 110px;
+		}
+	}
+}
+
+
+/* Tables */
+
+.table {
+	border: none;
+	color: #2f4455;
+	font-weight: 600;
+	margin: 0 0 40px 0;
+
+	th {
+		font-weight: 700;
+		text-align: left;
+		padding: 8px 25px;
+		text-transform: uppercase;
+	}
+
+	td {
+		border: none;
+		text-align: left;
+		padding: 8px 25px;
+	}
+
+	&.table_strip {
+		width: 100%;
+
+		td {
+			padding: 13px 25px;
+
+			&:first-child {
+				.border-radius(4px 0 0 4px);
+			}
+
+			&:last-child {
+				.border-radius(0 4px 4px 0);
+			}
+		}
+
+		tr:nth-child(odd){
+			background: transparent;
+		}
+
+		tr:nth-child(even) th,
+		tr:nth-child(even) td {
+			background: #fff;
+			overflow: hidden;
+		}
+	}
+
+	&.fs16 {
+		font-size: 16px;
+
+		td {
+			padding: 5px 25px;
+		}
+	}
+
+	&.two_col {
+
+		td:last-child {
+			width: 40%;
+		}
+	}
+
+	&.four_col {
+
+		th,
+		td {
+			text-align: center;
+
+			&:first-child {
+				text-align: left;
+			}
+		}
+	}
+}
+
+/* Form & Button */
+
+.form_group {
+	position: relative;
+	margin-bottom: 22px;
+
+	.form_left {
+		width: 50%;
+		float: left;
+		padding-right: 55px;
+		text-align: right;
+	}
+
+	.form_right {
+		width: 50%;
+		float: right;
+		padding-left: 20px;
+	}
+
+}
+
+label {
+	color: #2f4455;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 20px;
+	display: inline-block;
+}
+
+.form_control {
+	margin: 0;
+	width: 200px;
+	outline: none;
+	color: #2f4455;
+	text-align: left;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 2px 20px;
+	display: inline-block;
+	background: transparent;
+	border: 1px solid #d8d8d8;
+	.border-radius(2px);
+
+	&.valid_date {
+		width: 60px;
+		margin-right: 12px;
+	}
+
+	&.cvv {
+		width: 130px;
+	}
+	&:focus {
+		border-color: #2f4455;
+	}
+
+	::-webkit-input-placeholder {
+		color: #2f4455;
+	}
+
+	:-moz-placeholder {
+		color: #2f4455;
+	}
+}
 
 .btn {
 	color: #fff;
@@ -447,6 +720,17 @@ body {
 	&:active {
 		top: 1px;
 	}
+
+	&.btn_sm {
+		height: 32px;
+		font-size: 14px;
+		padding: 5px 25px;
+
+		&:before {
+			top: 0;
+			right: 0;
+		}
+	}
 }
 
 
@@ -486,7 +770,6 @@ p {
 a {
 
 }
-
 
 .text-right {
 	text-align: center;
