@@ -483,6 +483,7 @@ body {
 }
 .report_nav a {
   color: #fff;
+  font-size: 19px;
   font-weight: 700;
   text-decoration: none;
   text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.1);
